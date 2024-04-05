@@ -1,0 +1,13 @@
+body {
+    font-family:"Comic Sans MS";
+    background-color: yellowgreen;
+}
+#buttonBox {
+    margin-top: px;
+    
+}
+#thingToDo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    background-color: white;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5</title>
+</head>
+<body>
+    <h1 id="myName">Happy Mahlangu</h1>
+    <hr>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYBBmXGGXnujpmM-kZX4MKZA8mR09804rsz38Fg4sJug&s" alt="this is the image" >
+    <p id="aboutMe"><em><strong>This is a bit about me</strong></em></p>
+    <hr>
+    <h2>Things i like </h2>
+    <p>here:</p>
+    <ol>
+        <li id="first">food</li>
+        <li id="second">anime</li>
+        <li id="third">games</li>
+    </ol>
+    <button id="changeList"> Change your list</button>
+    <script>
+        let item1;
+        let item2;
+        let item3;
+        document.getElementById("changeList").onclick = newList
+
+        function newList(){
+            item1 = prompt("enter new first thing you like ")
+            item2 = prompt("second?")
+            item3 = prompt("third?")
+            upDateList()
+        }
+        function upDateList(){
+            document.getElementById("first").innerHTML = item1
+            document.getElementById("second").innerHTML = item2
+            document.getElementById("third").innerHTML = item3
+        }
+        document.getElementById("first").innerHTML = "peace"
+
+
+    </script>
+</body>
+</html>
